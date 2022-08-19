@@ -11,7 +11,7 @@ dependencies:
   - hydra-core=1.0.6
   - matplotlib=3.3.4
   - pandas=1.2.3
-  - git=2.30.2
-  - pip=20.3.3
+  - git=2.37.2
+  - pip=22.2.2
   - pip:
-      - wandb==0.10.31
+      - wandb==0.13.1
