@@ -5,4 +5,4 @@ channels:
 dependencies:
   - pip=22.2.2
   - pip:
-      - wandb==0.13.1
+      - wandb
