@@ -38,7 +38,7 @@ def go(args):
     logger.info(f"Saving clean data as 'clean_sample.csv'")
     df.to_csv("clean_sample.csv", index=False)
 
-    # Upliading output artifact to W&B
+    # Uploading output artifact to W&B
     logger.info(f"Uploading output artifact to W&B as {args.output_artifact}")
     artifact = wandb.Artifact(
         args.output_artifact,

@@ -14,6 +14,8 @@ etl:
 data_check:
   kl_threshold: 0.2
 modeling:
+  trainval_artifact: "trainval_data.csv"
+  output_artifact: "random_forest_export"
   # Fraction of data to use for test (the remaining will be used for train and validation)
   test_size: 0.2
   # Fraction of remaining data to use for validation
@@ -34,7 +36,7 @@ modeling:
     min_samples_leaf: 3
     # Here -1 means all available cores
     n_jobs: -1
-    criterion: mae
+    criterion: absolute_error
     max_features: 0.5
     # DO not change the following
     oob_score: true
