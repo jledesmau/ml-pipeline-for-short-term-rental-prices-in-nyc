@@ -1,2 +1,0 @@
-* Public W&B project: [LINK](https://wandb.ai/jledesmau/nyc_airbnb?workspace=user-jledesmau)
-* Public Github repository: [LINK](https://github.com/jledesmau/ml-pipeline-for-short-term-rental-prices-in-nyc)
