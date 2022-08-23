@@ -114,12 +114,15 @@ def go(config: DictConfig):
             )
 
         if "test_regression_model" in active_steps:
-
-            ##################
-            # Implement here #
-            ##################
-
-            pass
+            _ = mlflow.run(
+                f"{config['main']['components_repository']}/test_regression_model",
+                "main",
+                version="main",
+                parameters={
+                    "mlflow_model": f"{config['modeling']['output_artifact']}:prod",
+                    "test_dataset": f"{config['modeling']['test_artifact']}:latest"
+                },
+            )
 
 
 if __name__ == "__main__":
